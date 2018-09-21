@@ -9,6 +9,6 @@ mongoose.Promise = global.Promise;
 module.exports = authenticate(async (req, res) => {
   const team = req.user;
   console.log(`${team.name} - Getting script versions`);
-  const scripts = await Script.find({ owner: team._id }).exec();
+  const scripts = await Script.find({ owner: team._id }).sort("-_id").exec();
   return scripts;
 });
