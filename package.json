@@ -1,11 +1,10 @@
 {
   "name": "versions",
   "scripts": {
-    "start": "micro ."
+    "start": "node index.js"
   },
   "dependencies": {
-    "micro": "9.1.0",
-    "mm-authenticate": "0.0.6",
+    "mm-authenticate": "0.0.7",
     "mm-schemas": "0.0.6",
     "mongoose": "5.0.7"
   }

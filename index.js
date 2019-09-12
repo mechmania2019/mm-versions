@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const authenticate = require("mm-authenticate")(mongoose);
-const { send } = require("micro");
 const { Script } = require("mm-schemas")(mongoose);
+
+const send = (res, status, data) => (res.statusCode = status, res.end(data));
 
 mongoose.connect(process.env.MONGO_URL);
 mongoose.Promise = global.Promise;
