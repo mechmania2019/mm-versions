@@ -4,8 +4,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "mm-authenticate": "0.0.7",
-    "mm-schemas": "0.0.6",
-    "mongoose": "5.0.7"
+    "mm-authenticate": "0.0.10",
+    "mm-schemas": "0.0.10",
+    "mongoose": "5.7.1"
   }
 }
